@@ -26,9 +26,9 @@ app.use((req, res, next)=>{
     next();
 });
 // express maintenance middleware - use for when site is under maintenance
-app.use((req, res, next)=>{
-    res.render("maintenance.hbs")
-})
+// app.use((req, res, next)=>{
+//     res.render("maintenance.hbs")
+// })
 
 app.use(express.static(__dirname + "/public")); // create a static directory
 
